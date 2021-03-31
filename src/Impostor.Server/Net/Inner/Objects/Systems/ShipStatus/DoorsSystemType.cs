@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Impostor.Api.Games;
 using Impostor.Api.Innersloth;
@@ -13,13 +13,13 @@ namespace Impostor.Server.Net.Inner.Objects.Systems.ShipStatus
 
         public DoorsSystemType(IGame game)
         {
-            var doorCount = game.Options.Map switch
+            var doorCount = 99;/* game.Options.Map switch
             {
                 MapTypes.Skeld => 13,
                 MapTypes.MiraHQ => 2,
-                MapTypes.Polus => 12,
+                //MapTypes.Polus => 12,
                 _ => throw new ArgumentOutOfRangeException(),
-            };
+            };*/
 
             _doors = new Dictionary<int, bool>(doorCount);
 

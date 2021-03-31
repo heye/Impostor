@@ -44,5 +44,15 @@ namespace Impostor.Api.Innersloth
         PolusRightStabilizer = 9,
         PolusLeftStabilizer = 10,
         PolusOutsideAdmin = 11,
+
+        AnyVent14 = 14,
+        AnyVent15 = 15,
+        AnyVent16 = 16,
+        AnyVent17 = 17,
+        AnyVent18 = 18,
+        AnyVent19 = 19,
+        AnyVent20 = 20,
+        AnyVent21 = 21,
+        AnyVent22 = 22,
     }
 }

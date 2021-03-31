@@ -17,7 +17,7 @@ namespace Impostor.Api.Innersloth
         {
             [MapTypes.Skeld] = new MapSpawn(1.6f, new Vector2(-0.72f, 0.62f), new Vector2(-0.72f, 0.62f)),
             [MapTypes.MiraHQ] = new MapSpawn(1.55f, new Vector2(-4.4f, 2.2f), new Vector2(24.043f, 1.72f)),
-            [MapTypes.Polus] = new MapSpawn(1f, new Vector2(16.64f, -2.46f), new Vector2(17.726f, -16.286f)),
+            //[MapTypes.Polus] = new MapSpawn(1f, new Vector2(16.64f, -2.46f), new Vector2(17.726f, -16.286f)),
         };
 
         public float SpawnRadius { get; }

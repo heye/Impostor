@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
@@ -105,11 +105,11 @@ namespace Impostor.Server.Net.State
         {
             if (GameState == GameStates.Starting)
             {
-                for (var i = 0; i < _players.Values.Count; i++)
+                /*for (var i = 0; i < _players.Values.Count; i++)
                 {
                     var player = _players.Values.ElementAt(i);
                     await player.Character!.NetworkTransform.SetPositionAsync(player, MapSpawn.Maps[Options.Map].GetSpawnLocation(i, PlayerCount, true), Vector2.Zero);
-                }
+                }*/
 
                 GameState = GameStates.Started;
 

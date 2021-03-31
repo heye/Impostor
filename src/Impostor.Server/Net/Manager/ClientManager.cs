@@ -1,4 +1,4 @@
-﻿using System.Collections.Concurrent;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -20,7 +20,8 @@ namespace Impostor.Server.Net.Manager
     {
         private static readonly HashSet<int> SupportedVersions = new HashSet<int>
         {
-            GameVersion.GetVersion(2021, 3, 5), // 2021.3.5
+            GameVersion.GetVersion(2021, 3, 31), // 2021.3.5
+            50531650
         };
 
         private static readonly string ServerBrand = $"Impostor {DotnetUtils.GetVersion()}";
@@ -59,6 +60,7 @@ namespace Impostor.Server.Net.Manager
         {
             if (!SupportedVersions.Contains(clientVersion))
             {
+                _logger.LogDebug("Bad client Vers: " + clientVersion.ToString(), clientVersion);
                 using var packet = MessageWriter.Get(MessageType.Reliable);
                 Message01JoinGameS2C.SerializeError(packet, false, DisconnectReason.IncorrectVersion);
                 await connection.SendAsync(packet);

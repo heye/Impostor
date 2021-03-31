@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -75,7 +75,7 @@ namespace Impostor.Server.Net.Inner.Objects
             }
             else
             {
-                throw new NotImplementedException("This shouldn't happen, according to Among Us disassembly.");
+                //throw new NotImplementedException("This shouldn't happen, according to Among Us disassembly.");
             }
         }
 
